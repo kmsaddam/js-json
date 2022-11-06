@@ -51,10 +51,13 @@
             }
         }
 
-        let json_to_object = JSON.parse(person_json);
+        let json_data = JSON.stringify(person_json);
+
+        let json_data_to_object = JSON.parse(json_data);
 
 
-        console.log(json_to_object);
+
+        console.log(json_data_to_object);
 
 
 
