@@ -10,21 +10,58 @@
     
 
     <script>
-        let person = {
-            name: "Shourav Hasan",
-            dob: 1988-12-10,
-            email: "shourav1988@gmail.com",
-            married: false,
-            greet: function () {
+        // let person = {
+        //     name: "Shourav Hasan",
+        //     dob: 1988-12-10,
+        //     email: "shourav1988@gmail.com",
+        //     married: false,
+        //     greet: function () {
+        //         console.log(`Hello ${this.name}!!`)
+        //     }
+        // }
+
+
+        // console.log(person.greet());
+
+        //Convert to JSON Data
+        // let person = {
+        //     name: "Shourav Hasan",
+        //     dob: 1988-12-10,
+        //     email: "shourav1988@gmail.com",
+        //     married: false,
+        //     greet: function () {
+        //         console.log(`Hello ${this.name}!!`)
+        //     }
+        // }
+
+        // let object_to_json = JSON.stringify(person);
+
+
+        // console.log(object_to_json);
+
+
+        //Convert to JSON Object
+        let person_json = {
+            "name": "Shourav Hasan",
+            "dob": 1988-12-10,
+            "email": "shourav1988@gmail.com",
+            "married": false,
+            "greet": function () {
                 console.log(`Hello ${this.name}!!`)
             }
         }
 
+        let json_to_object = JSON.parse(person_json);
 
-        console.log(person.greet());
+
+        console.log(json_to_object);
 
 
-        
+
+
+
+
+
     </script>
 
 
