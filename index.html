@@ -57,11 +57,352 @@
 
 
 
-        console.log(json_data_to_object);
+        //console.log(json_data_to_object);
+
+
+        let student_profiles = [
+        {
+            "_id": "63675af4db235d847fdcc66c",
+            "index": 0,
+            "guid": "adbb62b9-73c0-4179-ab68-8a2a0ad9637c",
+            "isActive": true,
+            "balance": "$1,679.22",
+            "picture": "http://placehold.it/32x32",
+            "age": 26,
+            "eyeColor": "brown",
+            "name": "Quinn Mayer",
+            "gender": "male",
+            "company": "ZOUNDS",
+            "email": "quinnmayer@zounds.com",
+            "phone": "+1 (962) 506-3793",
+            "address": "692 Reeve Place, Brethren, Marshall Islands, 5980",
+            "about": "Laboris nulla nisi eiusmod ut voluptate. Sit voluptate laborum duis reprehenderit occaecat magna. Non non tempor id quis culpa ut dolor nisi ea eu sit eiusmod.\r\n",
+            "registered": "2018-07-11T02:40:44 -06:00",
+            "latitude": 55.354752,
+            "longitude": -62.360583,
+            "tags": [
+            "ea",
+            "Lorem",
+            "occaecat",
+            "dolor",
+            "nulla",
+            "nisi",
+            "cillum"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "Freda Murray"
+            },
+            {
+                "id": 1,
+                "name": "Blanchard Bailey"
+            },
+            {
+                "id": 2,
+                "name": "Hines Russell"
+            }
+            ],
+            "greeting": "Hello, Quinn Mayer! You have 1 unread messages.",
+            "favoriteFruit": "banana"
+        },
+        {
+            "_id": "63675af4e2e8c3e67866a8bf",
+            "index": 1,
+            "guid": "d9f863b7-9bfa-4fce-bb1c-ca4978fc5079",
+            "isActive": false,
+            "balance": "$3,800.88",
+            "picture": "http://placehold.it/32x32",
+            "age": 35,
+            "eyeColor": "green",
+            "name": "Louella Fuentes",
+            "gender": "female",
+            "company": "QUILTIGEN",
+            "email": "louellafuentes@quiltigen.com",
+            "phone": "+1 (810) 576-3403",
+            "address": "833 Elm Avenue, Blanco, Minnesota, 804",
+            "about": "Reprehenderit ipsum elit incididunt deserunt est tempor consequat sit. Duis labore incididunt et Lorem mollit voluptate aliqua aute quis anim aute. Cupidatat proident dolor laborum dolor. Dolor non non deserunt voluptate culpa tempor elit elit exercitation deserunt ea pariatur. Minim irure culpa tempor eiusmod ea occaecat ullamco velit irure commodo fugiat officia ut. Veniam ad dolore minim amet non pariatur.\r\n",
+            "registered": "2022-08-08T10:57:50 -06:00",
+            "latitude": 10.147477,
+            "longitude": -55.191829,
+            "tags": [
+            "adipisicing",
+            "fugiat",
+            "sit",
+            "consequat",
+            "occaecat",
+            "ad",
+            "consequat"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "King Swanson"
+            },
+            {
+                "id": 1,
+                "name": "Heather Greer"
+            },
+            {
+                "id": 2,
+                "name": "Reid King"
+            }
+            ],
+            "greeting": "Hello, Louella Fuentes! You have 10 unread messages.",
+            "favoriteFruit": "banana"
+        },
+        {
+            "_id": "63675af4281cf4c660b01f6c",
+            "index": 2,
+            "guid": "36522947-4c89-4bd9-a375-8c3926a435e6",
+            "isActive": true,
+            "balance": "$3,190.02",
+            "picture": "http://placehold.it/32x32",
+            "age": 30,
+            "eyeColor": "brown",
+            "name": "Phelps Pratt",
+            "gender": "male",
+            "company": "PAWNAGRA",
+            "email": "phelpspratt@pawnagra.com",
+            "phone": "+1 (976) 511-2550",
+            "address": "884 Greenpoint Avenue, Kanauga, California, 1224",
+            "about": "Non reprehenderit mollit adipisicing nulla sint. Cillum anim veniam consequat non sint id sunt eu. Consequat consequat in dolor ipsum mollit sunt. Reprehenderit sit sint quis duis non nostrud consequat ex do aute occaecat nulla occaecat non. Sit sit exercitation ex aliquip excepteur reprehenderit elit officia aliqua proident proident laborum laborum. Ex sint ut consectetur veniam anim qui proident.\r\n",
+            "registered": "2022-10-15T03:05:52 -06:00",
+            "latitude": 89.393238,
+            "longitude": 90.369233,
+            "tags": [
+            "laborum",
+            "id",
+            "eiusmod",
+            "laborum",
+            "aliquip",
+            "sit",
+            "laborum"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "April Montgomery"
+            },
+            {
+                "id": 1,
+                "name": "Genevieve Holmes"
+            },
+            {
+                "id": 2,
+                "name": "Erin Tate"
+            }
+            ],
+            "greeting": "Hello, Phelps Pratt! You have 8 unread messages.",
+            "favoriteFruit": "strawberry"
+        },
+        {
+            "_id": "63675af4a0afcddd9be08aa8",
+            "index": 3,
+            "guid": "9738b21b-d044-42a9-83ef-4a5aee3a53bf",
+            "isActive": false,
+            "balance": "$1,223.56",
+            "picture": "http://placehold.it/32x32",
+            "age": 32,
+            "eyeColor": "blue",
+            "name": "Frieda Petty",
+            "gender": "female",
+            "company": "QUILK",
+            "email": "friedapetty@quilk.com",
+            "phone": "+1 (886) 514-2054",
+            "address": "214 Beverly Road, Avalon, Northern Mariana Islands, 7252",
+            "about": "Nisi proident exercitation sunt nulla ipsum do occaecat cillum. Enim laborum in magna cupidatat irure ut. Consequat cupidatat excepteur qui occaecat nostrud aute minim incididunt Lorem voluptate fugiat sunt.\r\n",
+            "registered": "2021-11-16T01:36:04 -06:00",
+            "latitude": 41.371867,
+            "longitude": 175.893225,
+            "tags": [
+            "culpa",
+            "velit",
+            "veniam",
+            "laborum",
+            "cupidatat",
+            "eu",
+            "duis"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "Lara Warner"
+            },
+            {
+                "id": 1,
+                "name": "Kerry Rowland"
+            },
+            {
+                "id": 2,
+                "name": "Velazquez Battle"
+            }
+            ],
+            "greeting": "Hello, Frieda Petty! You have 4 unread messages.",
+            "favoriteFruit": "banana"
+        },
+        {
+            "_id": "63675af481a7443135c27870",
+            "index": 4,
+            "guid": "53c36287-8a46-4833-972b-7a1f16c97232",
+            "isActive": false,
+            "balance": "$1,853.15",
+            "picture": "http://placehold.it/32x32",
+            "age": 32,
+            "eyeColor": "blue",
+            "name": "Mcfadden Casey",
+            "gender": "male",
+            "company": "ENDIPIN",
+            "email": "mcfaddencasey@endipin.com",
+            "phone": "+1 (937) 462-3454",
+            "address": "958 Dunne Place, Bartley, Alabama, 8023",
+            "about": "Aute eiusmod aliqua officia tempor pariatur irure sint aliqua laboris aute veniam excepteur ex sunt. Qui amet dolor sint deserunt nostrud cillum aliquip ipsum est sint veniam labore. Ullamco voluptate id anim nostrud est non laborum.\r\n",
+            "registered": "2014-08-09T12:15:42 -06:00",
+            "latitude": 7.646484,
+            "longitude": 146.627374,
+            "tags": [
+            "ad",
+            "magna",
+            "aliquip",
+            "do",
+            "Lorem",
+            "nulla",
+            "eu"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "Emma Heath"
+            },
+            {
+                "id": 1,
+                "name": "Bradshaw Hayes"
+            },
+            {
+                "id": 2,
+                "name": "Garrett Phillips"
+            }
+            ],
+            "greeting": "Hello, Mcfadden Casey! You have 10 unread messages.",
+            "favoriteFruit": "banana"
+        },
+        {
+            "_id": "63675af4ed0eea76cdeaa6ea",
+            "index": 5,
+            "guid": "3a2bcca3-0086-44ea-9c92-66687183f7db",
+            "isActive": false,
+            "balance": "$1,040.67",
+            "picture": "http://placehold.it/32x32",
+            "age": 39,
+            "eyeColor": "brown",
+            "name": "Rebekah Carr",
+            "gender": "female",
+            "company": "OVERFORK",
+            "email": "rebekahcarr@overfork.com",
+            "phone": "+1 (956) 443-3358",
+            "address": "719 Farragut Road, Noxen, Missouri, 2024",
+            "about": "Id id laborum reprehenderit laborum quis amet exercitation eu laboris proident ea. Sunt dolore mollit culpa eu est sit consequat amet nostrud cupidatat. Pariatur cillum incididunt sit nostrud eu cillum anim ut quis labore cupidatat do. Aliquip cillum deserunt adipisicing duis cupidatat sunt irure sunt eiusmod. Ex adipisicing in quis ut consequat. Laboris sunt amet mollit cillum aliquip esse occaecat nostrud. Elit nulla et irure sint minim ullamco enim et incididunt laboris non deserunt et.\r\n",
+            "registered": "2014-01-25T07:04:18 -06:00",
+            "latitude": 3.541285,
+            "longitude": -22.306283,
+            "tags": [
+            "ut",
+            "sit",
+            "sunt",
+            "eu",
+            "duis",
+            "incididunt",
+            "nisi"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "Whitaker Burks"
+            },
+            {
+                "id": 1,
+                "name": "Rich Fuller"
+            },
+            {
+                "id": 2,
+                "name": "Hartman Zimmerman"
+            }
+            ],
+            "greeting": "Hello, Rebekah Carr! You have 4 unread messages.",
+            "favoriteFruit": "strawberry"
+        },
+        {
+            "_id": "63675af4b3509cf214228319",
+            "index": 6,
+            "guid": "9fcfffae-36e6-4b45-80a4-6f74593f4b97",
+            "isActive": false,
+            "balance": "$1,448.72",
+            "picture": "http://placehold.it/32x32",
+            "age": 40,
+            "eyeColor": "blue",
+            "name": "Owens Woods",
+            "gender": "male",
+            "company": "VANTAGE",
+            "email": "owenswoods@vantage.com",
+            "phone": "+1 (857) 488-2540",
+            "address": "693 Bushwick Place, Kempton, Virginia, 3806",
+            "about": "Dolore ad nostrud adipisicing aute sunt. Tempor nostrud in occaecat id proident velit commodo dolor esse reprehenderit cupidatat irure Lorem qui. Magna commodo ipsum duis consequat minim sint cillum exercitation pariatur tempor.\r\n",
+            "registered": "2021-07-15T08:49:33 -06:00",
+            "latitude": -5.274097,
+            "longitude": -84.033957,
+            "tags": [
+            "elit",
+            "aliquip",
+            "fugiat",
+            "commodo",
+            "non",
+            "quis",
+            "irure"
+            ],
+            "friends": [
+            {
+                "id": 0,
+                "name": "Holcomb Hinton"
+            },
+            {
+                "id": 1,
+                "name": "Slater Emerson"
+            },
+            {
+                "id": 2,
+                "name": "Meagan Barton"
+            }
+            ],
+            "greeting": "Hello, Owens Woods! You have 8 unread messages.",
+            "favoriteFruit": "strawberry"
+        }
+        ];
 
 
 
+    let custom_student_profiles = JSON.parse(JSON.stringify(student_profiles));
+    console.log(custom_student_profiles);
 
+
+    for (x in custom_student_profiles) {
+
+        let id = custom_student_profiles[x]['_id'];
+        console.log(`Student ID: ${id}`);
+
+        let name = custom_student_profiles[x]['name'];
+        console.log(`Student Name: ${id}`);
+
+
+        let friends = custom_student_profiles[x]['friends'];
+        console.log(friends);
+        for (y in friends) {
+            let count = eval(parseInt(y) + 1);
+            console.log(`Friend ${count}: ${friends[y]['name']}`)
+        }
+
+        console.log(`---------------------`);
+
+    }
 
 
 
